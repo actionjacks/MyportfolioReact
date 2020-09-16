@@ -1,0 +1,13 @@
+:root {
+  cursor: url(/images/cursors/coursor.png), auto !important;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@import './style/colors.scss';
+@import './style/brakePoints.scss';
+@import './style/Header.scss';

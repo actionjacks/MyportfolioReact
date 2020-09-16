@@ -1,24 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import "./App.scss";
+import Header from "./components/Header";
 
 function App() {
+  const [pageData, setPageData] = useState({});
+
+  function loadData(Language) {
+    fetch(`/myData${Language}.json`)
+      .then((response) => response.json())
+      .then((data) => {
+        setPageData({
+          content: data,
+        });
+      })
+      .catch((err) => console.log(`HTML data not found :() ${err}`));
+  }
+  useEffect(() => {
+    loadData("PL");
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Header data={pageData.content} />
     </div>
   );
 }

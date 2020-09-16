@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,KAAK,CAAC;EACJ,MAAM,EAAE,gCAAgC,EAAE,IAAI,CAAC,UAAU;CAC1D;;AAED,AAAA,CAAC,CAAC;EACA,UAAU,EAAE,UAAU;EACtB,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,CAAC;CACV",
+    "sources": [
+        "../App.scss",
+        "../style/colors.scss",
+        "../style/brakePoints.scss",
+        "../style/Header.scss"
+    ],
+    "names": [],
+    "file": "App.css"
+}
