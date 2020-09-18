@@ -1,3 +1,38 @@
-h1 {
-    background-color: yellow;
+.header {
+  position: fixed;
+  //   display: none;
+  top: 0;
+  width: 100%;
+  // border: 1px solid white;
+  // box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
+
+  & .header__list {
+    margin-left: 400px;
+    margin-right: 400px;
+
+    & .header__items {
+      display: flex;
+      justify-content: center;
+
+      & .header__item {
+        flex: 1;
+        list-style: none;
+
+        & .header__link {
+          color: rgb(255, 255, 255);
+          font-weight: 700;
+          text-transform: uppercase;
+          text-decoration: none;
+        }
+
+        & .header__link:hover {
+          cursor: url(/images/cursors/pointer.png), auto !important;
+        }
+      }
+    }
+  }
+}
+
+li:nth-child(1) a {
+  color: rgb(247, 186, 186) !important;
 }

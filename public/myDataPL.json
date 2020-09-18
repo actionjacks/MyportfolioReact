@@ -1,6 +1,10 @@
 {
     "main": {
-        "headerOptions": ["menu1", "menu2", "menu3"],
+        "headerOptions": ["details", "contact", "me"],
         "description": "Pasjonat gier komputerowych oraz planszowych, wielbiciel programowania."
+    },
+    "wellcomePage": {
+        "title": "main name",
+        "mydesc": "lorem lorem lorem lorem lorem"
     }
 }

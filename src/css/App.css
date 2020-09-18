@@ -1,5 +1,81 @@
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgba(255, 0, 0, 0.8);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(255, 0, 0, 0.4);
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.header .header__list {
+  margin-left: 400px;
+  margin-right: 400px;
+}
+
+.header .header__list .header__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header .header__list .header__items .header__item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  list-style: none;
+}
+
+.header .header__list .header__items .header__item .header__link {
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.header .header__list .header__items .header__item .header__link:hover {
+  cursor: url(/images/cursors/pointer.png), auto !important;
+}
+
+li:nth-child(1) a {
+  color: #f7baba !important;
+}
+
+.wellcomePage {
+  height: 100vh;
+  background: url("/images/wellcome_page_bg.jpg");
+  background-size: 100% 100%;
+  background-position-x: center;
+  background-position-y: top;
+  background-attachment: fixed;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: #161415;
+}
+
+.icons {
+  color: white !important;
+}
+
 :root {
   cursor: url(/images/cursors/coursor.png), auto !important;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -7,5 +83,20 @@
           box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+.MuiSvgIcon-root {
+  border: 1px solid !important;
+  border-radius: 50% !important;
+  font-size: 50px !important;
+}
+
+.MuiSvgIcon-root:hover {
+  cursor: url(/images/cursors/pointer.png), auto !important;
+}
+
+.section {
+  border-top: 1px solid black;
+  height: 300vh;
 }
 /*# sourceMappingURL=App.css.map */

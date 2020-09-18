@@ -1,9 +1,19 @@
 import React, { useState, useEffect } from "react";
 import "./App.scss";
+//components
 import Header from "./components/Header";
+import WellcomePage from "./components/WellcomePage";
+import scroll from "react-scroll";
+//icons
+import ArrowDropUpIcon from "@material-ui/icons/ArrowDropUp";
 
 function App() {
   const [pageData, setPageData] = useState({});
+
+  const handleClick = () => {
+    scroll.animateScroll.scrollToTop();
+    console.log(scroll);
+  };
 
   function loadData(Language) {
     fetch(`/myData${Language}.json`)
@@ -20,9 +30,27 @@ function App() {
   }, []);
 
   return (
-    <div className="app">
-      <Header data={pageData.content} />
-    </div>
+    <>
+      <div className="app">
+        <Header data={pageData.content} />
+      </div>
+
+      <div className="scrollContainer">
+        <WellcomePage data={pageData.content} />
+        <section id="page-1" className="section">
+          section 1
+        </section>
+        <section id="page-2" className="section">
+          section 2
+        </section>
+        <section id="page-3" className="section">
+          section 3
+          <br />
+          <br />
+          <ArrowDropUpIcon onClick={handleClick} />
+        </section>
+      </div>
+    </>
   );
 }
 
