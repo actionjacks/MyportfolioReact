@@ -69,8 +69,71 @@ li:nth-child(1) a {
   background-color: #161415;
 }
 
-.icons {
+.wellcomePage .wellcomePage__banerText {
+  color: white;
+  text-align: center;
+  padding: 200px;
+}
+
+.wellcomePage .icons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.wellcomePage .icons .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 105%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.wellcomePage .icons a .MuiSvgIcon-root {
+  font-size: 2rem !important;
   color: white !important;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.wellcomePage .icons a .MuiSvgIcon-root:hover {
+  background-color: #b0dff5;
+}
+
+.icons:hover .tooltiptext {
+  visibility: visible;
+}
+
+.errorDataNotFound {
+  height: 100vh;
+  background: url("/images/jsonError.jpg");
+  background-size: 100% 100%;
+  background-position-x: center;
+  background-position-y: top;
+  background-attachment: fixed;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: #161415;
+}
+
+.errorDataNotFound h1 {
+  color: #e68888;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 :root {
@@ -85,18 +148,7 @@ li:nth-child(1) a {
   margin: 0;
 }
 
-.MuiSvgIcon-root {
-  border: 1px solid !important;
-  border-radius: 50% !important;
-  font-size: 50px !important;
-}
-
-.MuiSvgIcon-root:hover {
-  cursor: url(/images/cursors/pointer.png), auto !important;
-}
-
 .section {
   border-top: 1px solid black;
-  height: 300vh;
 }
 /*# sourceMappingURL=App.css.map */

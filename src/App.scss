@@ -3,6 +3,10 @@
 @import "./style/customScrollbar.scss";
 @import "./style/Header.scss";
 @import './style//WellcomePage.scss';
+@import './style/About.scss';
+@import './style/Form.scss';
+@import './style/Portfolio.scss';
+@import './style/Footer.scss';
 
 :root {
   cursor: url(/images/cursors/coursor.png),
@@ -16,7 +20,15 @@
   margin: 0;
 }
 
-//style bootom button
+.arrow {
+  display: block;
+  color: pink;
+  position: fixed;
+  bottom: 1%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .MuiSvgIcon-root {
   border: 1px solid !important;
   border-radius: 50% !important;
@@ -27,12 +39,6 @@
   cursor: url(/images/cursors/pointer.png), auto !important;
 }
 
-// #page-1 {
-//   margin-top: 100px;
-//   background-color: red;
-// }
-
 .section {
   border-top: 1px solid black;
-  height: 300vh;
 }
