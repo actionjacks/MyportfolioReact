@@ -8,14 +8,12 @@ import Form from "./components/Form";
 import Portfolio from "./components/Portfolio";
 import Footer from "./components/Footer";
 
-import ArrowDropUpIcon from "@material-ui/icons/ArrowDropUp";
-import scroll from "react-scroll";
+
+
 
 function App() {
   const [pageData, setPageData] = useState({});
-  const handleClick = () => {
-    scroll.animateScroll.scrollToTop();
-  };
+
   function loadData(Language) {
     fetch(`/myData${Language}.json`)
       .then((response) => response.json())
@@ -51,9 +49,7 @@ function App() {
             <Footer />
           </div>
         </section>
-        <span className="arrow">
-          <ArrowDropUpIcon onClick={handleClick} />
-        </span>
+
       </div>
     </>
   );

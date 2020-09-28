@@ -1,0 +1,54 @@
+.footer {
+    position: relative;
+    background-color: rgb(4, 4, 4);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .footer_arrow {
+        position: absolute;
+        top: -25px;
+        right: 10px;
+        color: #fff;
+
+        .arrow__icon {
+            background-color: rgb(136, 136, 136);
+            transition: .7s;
+        }
+
+        .arrow__icon:hover {
+            background-color: rgb(108, 170, 192);
+        }
+    }
+
+    .MuiSvgIcon-root {
+        border: 1px solid !important;
+        border-radius: 50% !important;
+        font-size: 50px !important;
+    }
+
+    .footer__icons {
+        text-align: center;
+        padding: 10px;
+
+        .githubIcon,
+        .facebookIcon {
+            color: rgb(136, 136, 136);
+            font-size: 35px !important;
+            transition: .7s;
+            border: none !important;
+            margin-left: 10px;
+        }
+
+        .githubIcon:hover,
+        .facebookIcon:hover {
+            color: white;
+        }
+    }
+
+    .footer_copyright {
+        text-align: center;
+        padding: 10px;
+    }
+}
