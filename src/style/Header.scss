@@ -1,10 +1,12 @@
 .header {
+  z-index: 99;
   position: fixed;
-  //   display: none;
   top: 0;
   width: 100%;
-  // border: 1px solid white;
-  // box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
+  background-color: rgba(254, 254, 254, 0);
+  transition-timing-function: ease-in;
+  transition: all 0.7s;
+
 
   & .header__list {
     margin-left: 400px;
@@ -15,6 +17,7 @@
       justify-content: center;
 
       & .header__item {
+        padding: 1.2rem;
         flex: 1;
         list-style: none;
 
@@ -32,6 +35,11 @@
     }
   }
 }
+
+.header.nav__black {
+  background-color: rgb(0, 0, 0);
+}
+
 
 li:nth-child(1) a {
   color: rgb(247, 186, 186) !important;

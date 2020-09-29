@@ -1,9 +1,24 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 function Header({ data }) {
+  const [show, handleShow] = useState(false);
+
+  useEffect(() => {
+    console.log("klik");
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 120) {
+        handleShow(true);
+      } else handleShow(false);
+    });
+    return () => {
+      window.removeEventListener("scroll");
+    };
+  }, []);
+
   let idSectionForScroll = 0;
+
   return (
-    <div className="header">
+    <div className={`header ${show && "nav__black"}`}>
       {data !== undefined ? (
         <nav className="header__list">
           <ul className="header__items">
