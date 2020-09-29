@@ -2,9 +2,9 @@ import React from "react";
 
 function About({ data }) {
   return (
-    <>
+    <div className="about">
       {data !== undefined ? (
-        <div className="about">
+        <>
           <img
             className="about__profilePic"
             src="../images/avatar.jpg"
@@ -33,9 +33,9 @@ function About({ data }) {
               </p>
             </aside>
           </div>
-        </div>
+        </>
       ) : null}
-    </>
+    </div>
   );
 }
 

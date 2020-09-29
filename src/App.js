@@ -8,12 +8,17 @@ import Form from "./components/Form";
 import Portfolio from "./components/Portfolio";
 import Footer from "./components/Footer";
 
-
-
-
 function App() {
   const [pageData, setPageData] = useState({});
+  const [language, setlanguage] = useState("PL");
 
+  function changeLanguage() {
+    if (language === "PL") {
+      setlanguage("EN");
+    } else {
+      setlanguage("PL");
+    }
+  }
   function loadData(Language) {
     fetch(`/myData${Language}.json`)
       .then((response) => response.json())
@@ -25,12 +30,15 @@ function App() {
       .catch((err) => console.log(`HTML data not found :() ${err}`));
   }
   useEffect(() => {
-    loadData("PL");
-  }, []);
+    loadData(language);
+  }, [language]);
 
   return (
     <>
       <div className="app">
+        <button className="change__language" onClick={changeLanguage}>
+          change language
+        </button>
         <Header data={pageData.content} />
       </div>
       <div className="scrollContainer">
@@ -49,7 +57,6 @@ function App() {
             <Footer />
           </div>
         </section>
-
       </div>
     </>
   );

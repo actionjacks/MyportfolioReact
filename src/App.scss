@@ -20,6 +20,11 @@
   margin: 0;
 }
 
+.change__language {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
 
 .MuiSvgIcon-root:hover,
 a:hover,
@@ -29,6 +34,8 @@ input:hover {
   cursor: url(/images/cursors/pointer.png), auto !important;
 }
 
+.scrollContainer,
 .section {
   border-top: 1px solid black;
+  background-color: rgb(29, 29, 29);
 }

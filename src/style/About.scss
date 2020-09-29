@@ -1,0 +1,20 @@
+.about {
+    display: flex;
+    margin: 15vh;
+    color: white;
+    font-size: 20px;
+
+    & .about__profilePic {
+        object-fit: cover;
+        height: 20vh;
+        width: 20vh;
+        border-radius: 50%;
+    }
+
+    & .about__details {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10vw;
+        line-height: 2rem;
+    }
+}
