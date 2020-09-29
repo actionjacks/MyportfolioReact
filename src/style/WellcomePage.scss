@@ -37,15 +37,14 @@
             transition: 0.5s;
         }
 
-        & a .MuiSvgIcon-root {
+        & .icon__github {
             font-size: 2rem !important;
             color: white !important;
             transition: 1s;
-
         }
 
-        & a .MuiSvgIcon-root:hover {
-            background-color: rgb(176, 223, 245);
+        & .icon__github:hover {
+            color: rgb(88, 167, 165) !important;
         }
     }
 }

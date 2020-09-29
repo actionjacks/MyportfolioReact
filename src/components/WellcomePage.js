@@ -11,7 +11,7 @@ function WellcomePage({ data }) {
             <h3>{data.wellcomePage.mydesc}</h3>
             <div className="icons">
               <a href="https://github.com/actionjacks">
-                <GitHubIcon />
+                <GitHubIcon className="icon__github" />
                 <span className="tooltiptext">github</span>
               </a>
             </div>
