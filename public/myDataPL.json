@@ -23,6 +23,7 @@
     "portfolio": "moje prace",
     "myWork": ["objekt 1", "obiekt 2", "obiekt 3"],
     "form": {
+        "formTitle": "Napisz do mnie",
         "name": "imie",
         "subject": "tytuł wiadomości",
         "message": "treść wiadomości",

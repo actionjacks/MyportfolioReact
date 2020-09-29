@@ -1,0 +1,132 @@
+.form {
+    height: 100vh;
+    background-color: rgb(38, 37, 37);
+    color: white;
+    font-size: 20px;
+
+    & .form__contactForm {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 10vh;
+
+        & .form__icon {
+            font-size: 55px;
+            margin: auto;
+            color: rgb(136, 136, 136);
+            border-left: 1px solid rgb(136, 136, 136);
+            transition: .7s;
+        }
+
+        & .form__icon:hover {
+            color: white;
+        }
+
+        & .form__fieldset {
+            justify-content: center;
+            margin-top: 5vh;
+
+            h3 {
+                margin: 10px;
+            }
+
+            & .form__inputName {
+                margin-left: 10vw;
+                margin-top: 5vh;
+                display: flex;
+                flex-direction: column;
+                width: 30%;
+
+                & input[type="text"] {
+                    font-size: 20px;
+                    border: none;
+                    padding: 5px;
+                    background-color: rgb(211, 211, 211);
+                    border-bottom: 4px solid rgb(140, 139, 139);
+                }
+
+                & label {
+                    margin-bottom: 5px;
+                }
+            }
+
+            & .form__inputTitle {
+                margin-left: 10vw;
+                margin-top: 5vh;
+                display: flex;
+                flex-direction: column;
+                width: 30%;
+
+                & input[type="text"] {
+                    font-size: 20px;
+                    border: none;
+                    padding: 5px;
+                    background-color: rgb(211, 211, 211);
+                    border-bottom: 4px solid rgb(140, 139, 139);
+                }
+
+                & label {
+                    margin-bottom: 5px;
+                }
+            }
+
+            & .form__inputTextArea {
+                margin-left: 10vw;
+                margin-top: 5vh;
+                display: flex;
+                flex-direction: column;
+                width: 30%;
+                margin-bottom: 5vh;
+
+                & textarea {
+                    height: 20vh;
+                    resize: none;
+                    font-size: 20px;
+                    border: none;
+                    padding: 5px;
+                    background-color: rgb(211, 211, 211);
+                    border-bottom: 4px solid rgb(140, 139, 139);
+                }
+
+                & textarea:focus {
+                    font-size: 20px;
+                    border: none;
+                    padding: 5px;
+                    background-color: rgb(211, 211, 211);
+                    border-bottom: 4px solid rgb(140, 139, 139);
+                }
+
+                & label {
+                    margin-bottom: 5px;
+                }
+            }
+
+            & .form__button>button {
+                font-size: 15px;
+                color: black;
+                text-transform: uppercase;
+                text-decoration: none;
+                background: rgb(211, 211, 211);
+                padding: 5px 10px;
+                border-radius: 5px;
+                transition: all 0.4s ease 0s;
+            }
+
+            & .form__button>button:hover {
+                text-shadow: 0px 0px 6px rgb(255, 255, 255);
+                transition: all 0.4s ease 0s;
+                background: rgb(0, 0, 0);
+                color: white;
+            }
+
+            input:focus {
+                outline: none;
+            }
+
+            & .form__button {
+                margin: 5px 30vw 5px 0;
+                text-align: right;
+            }
+        }
+    }
+}

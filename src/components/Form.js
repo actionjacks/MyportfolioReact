@@ -12,15 +12,23 @@ function Form({ data }) {
     window.open(`mailto:${myMail}?subject=${subject}&body=${name}: ${message}`);
   };
   return (
-    <>
+    <div className="form">
       {data !== undefined ? (
         <>
-          {console.log(data.form)}
-          <form id="contactForm" name="contactForm">
-            <MailOutlineIcon />
-            <fieldset>
-              <div>
-                {/* input name */}
+          <form className="form__contactForm">
+            <MailOutlineIcon className="form__icon" />
+            <fieldset className="form__fieldset">
+              <h3>{data.form.formTitle}</h3>
+              <div className="form__button">
+                <button
+                  type="submit"
+                  onClick={handleSendForm}
+                  className="submit"
+                >
+                  {data.form.sendBtn}
+                </button>
+              </div>
+              <div className="form__inputName">
                 <label htmlFor="contactName">{data.form.name}</label>
                 <input
                   value={name}
@@ -31,8 +39,7 @@ function Form({ data }) {
                   onChange={(e) => setName(e.target.value)}
                 />
               </div>
-              {/* input subject  */}
-              <div>
+              <div className="form__inputTitle">
                 <label htmlFor="contactSubject">{data.form.subject}</label>
                 <input
                   value={subject}
@@ -43,8 +50,7 @@ function Form({ data }) {
                   onChange={(e) => setSubject(e.target.value)}
                 />
               </div>
-              {/* message */}
-              <div>
+              <div className="form__inputTextArea">
                 <label htmlFor="contactMessage">{data.form.message}</label>
                 <textarea
                   value={message}
@@ -53,24 +59,11 @@ function Form({ data }) {
                   name="contactMessage"
                 ></textarea>
               </div>
-              {/* send form */}
-              <div>
-                <button
-                  type="submit"
-                  onClick={handleSendForm}
-                  className="submit"
-                >
-                  {data.form.sendBtn}
-                </button>
-                {/* <span id="image-loader">
-             <img alt="" src="images/loader.gif" />
-           </span> */}
-              </div>
             </fieldset>
           </form>
         </>
       ) : null}
-    </>
+    </div>
   );
 }
 
