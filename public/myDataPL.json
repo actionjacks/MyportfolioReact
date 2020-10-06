@@ -25,8 +25,8 @@
     "form": {
         "formTitle": "Napisz do mnie",
         "name": "imie",
-        "subject": "tytuł wiadomości",
-        "message": "treść wiadomości",
+        "subject": "tytu wiadomosci",
+        "message": "tresc wiadomosci",
         "sendBtn": "WyslijTo"
     }
 }

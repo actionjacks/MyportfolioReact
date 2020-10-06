@@ -1,4 +1,5 @@
 @import "./style/colors.scss";
+@import './style/fonts.scss';
 @import "./style/brakePoints.scss";
 @import "./style/customScrollbar.scss";
 @import "./style/Header.scss";
@@ -18,6 +19,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: mainFont;
 }
 
 .change__language {

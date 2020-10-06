@@ -13,6 +13,7 @@ function Footer() {
     <div className="footer">
       <span className="footer_arrow">
         <ArrowDropUpIcon className="arrow__icon" onClick={handleClick} />
+        <p>Up</p>
       </span>
       <div className="footer__icons">
         <GitHubIcon className="githubIcon" />
