@@ -16,7 +16,6 @@ function Header({ data }) {
   }, []);
 
   const handleClick = () => {
-    console.log("klik");
     if (active === "--inactive") {
       handleActive("--active");
     } else {
@@ -54,6 +53,7 @@ function Header({ data }) {
           <>
             <nav className="header__list">
               <ul className="header__items">
+                {(idSectionForScroll = 0)}
                 {data.main.headerOptions.map((menuOption, index) => (
                   <li className="header__item">
                     <a

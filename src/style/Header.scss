@@ -140,7 +140,7 @@ li:nth-child(1) a {
     transition-timing-function: ease-in;
     transition: ease-in 1s;
 
-    & .header__list {
+    & .header__list {display: block;
       margin: 0 20vw 5px 20vw;
 
       & .header__items {
