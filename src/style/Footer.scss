@@ -1,55 +1,154 @@
-.footer {
-    position: relative;
-    background-color: rgb(4, 4, 4);
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-
-    .footer_arrow {
-        position: absolute;
-        top: -25px;
-        right: 10px;
+@include media-queries(xsmall) {
+    .footer {
+        width: 100%;
+        position: relative;
+        background-color: rgb(4, 4, 4);
         color: #fff;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
 
-        .arrow__icon {
-            background-color: rgb(136, 136, 136);
-            border: 10px solid white !important;
-            transition: .7s;
+        .footer_arrow {
+            position: absolute;
+            top: -25px;
+            right: 10px;
+            color: #fff;
+            & img{
+                margin-right: .1rem;
+            }
+            & p{
+                text-align: left;
+                margin: .7rem;
+            }
+
+            .arrow__icon {transform: rotate(-90deg);
+                width: 5rem;
+                // background-color: rgb(136, 136, 136);
+                // border: 10px solid white !important;
+                transition: .7s;
+            }
+
+            .arrow__icon:hover {
+                opacity: .5;
+            }
         }
 
-        .arrow__icon:hover {
-            background-color: rgb(108, 170, 192);
+        .MuiSvgIcon-root {
+            border: 1px solid !important;
+            border-radius: 50% !important;
+            font-size: 50px !important;
+        }
+
+        .footer__icons {
+            text-align: center;
+            padding: 10px;
+
+            .githubIcon,
+            .facebookIcon {
+                color: rgb(136, 136, 136);
+                font-size: 35px !important;
+                transition: .7s;
+                border: none !important;
+                margin-left: 10px;
+            }
+
+            .githubIcon:hover,
+            .facebookIcon:hover {
+                color: white;
+            }
+        }
+
+        .footer__copyright {
+            margin-top: .3rem;
+            font-size: .7rem;
+            text-align: center;
+            padding: 10px;
+        }
+        .footer__reactIcon{
+            display: flex;
+            margin-top: .3rem;
+            margin-left: 50%;
+            & img{
+                width: 1.2rem;
+            }
+            & p{
+                text-align: left;
+                margin: .7rem;
+            }
         }
     }
+}
 
-    .MuiSvgIcon-root {
-        border: 1px solid !important;
-        border-radius: 50% !important;
-        font-size: 50px !important;
-    }
+@include media-queries(large) {
+    .footer {
+        position: relative;
+        background-color: rgb(4, 4, 4);
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
 
-    .footer__icons {
-        text-align: center;
-        padding: 10px;
+        .footer_arrow {
+            position: absolute;
+            top: -25px;
+            right: 10px;
+            color: #fff;
+            & img{
+                margin-right: 5rem;
+            }
 
-        .githubIcon,
-        .facebookIcon {
-            color: rgb(136, 136, 136);
-            font-size: 35px !important;
-            transition: .7s;
-            border: none !important;
-            margin-left: 10px;
+            .arrow__icon {transform: rotate(-90deg);
+                width: 5rem;
+                // background-color: rgb(136, 136, 136);
+                // border: 10px solid white !important;
+                transition: .7s;
+            }
+
+            .arrow__icon:hover {
+                opacity: .5;
+            }
         }
 
-        .githubIcon:hover,
-        .facebookIcon:hover {
-            color: white;
+        .MuiSvgIcon-root {
+            border: 1px solid !important;
+            border-radius: 50% !important;
+            font-size: 50px !important;
         }
-    }
 
-    .footer_copyright {
-        text-align: center;
-        padding: 10px;
+        .footer__icons {
+            text-align: center;
+            padding: 10px;
+
+            .githubIcon,
+            .facebookIcon {
+                color: rgb(136, 136, 136);
+                font-size: 35px !important;
+                transition: .7s;
+                border: none !important;
+                margin-left: 10px;
+            }
+
+            .githubIcon:hover,
+            .facebookIcon:hover {
+                color: white;
+            }
+        }
+
+        .footer__copyright {
+            text-align: center;
+            padding: 10px;
+        }
+        .footer__reactIcon{
+            display: flex;
+            margin-top: .3rem;
+            margin-left: 50%;
+            & img{
+                width: 1.2rem;
+            }
+            & p{
+                text-align: left;
+                margin: .7rem;
+            }
+        }
     }
 }

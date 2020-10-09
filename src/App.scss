@@ -22,6 +22,10 @@
   font-family: mainFont;
 }
 
+body {
+  max-width: 100% !important;
+}
+
 .change__language {
   position: absolute;
   top: 50px;
@@ -30,6 +34,7 @@
 
 .MuiSvgIcon-root:hover,
 a:hover,
+img,
 button:hover,
 label:hover,
 input:hover {

@@ -1,20 +1,49 @@
-.portfolio {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    background-color: rgb(38, 37, 37);
-    color: white;
-    font-size: 20px;
-
-    & .portfolio__title {
-        margin: 15vh;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    & .porfolio__myWorkContainer {
+@include media-queries(xsmall) {
+    .portfolio {
         display: flex;
-        justify-content: space-between;
-        margin: 10px;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: 100vh;
+        background-color: rgb(38, 37, 37);
+        color: white;
+        font-size: 20px;
+
+        & .portfolio__title {
+            margin: 10vh;
+            flex-direction: column;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        & .porfolio__myWorkContainer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 10px;
+        }
+    }
+}
+
+@include media-queries(large) {
+    .portfolio {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        background-color: rgb(38, 37, 37);
+        color: white;
+        font-size: 20px;
+
+        & .portfolio__title {
+            margin: 15vh;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        & .porfolio__myWorkContainer {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            margin: 10px;
+        }
     }
 }

@@ -17,17 +17,8 @@ function Form({ data }) {
         <>
           <form className="form__contactForm">
             <MailOutlineIcon className="form__icon" />
-            <fieldset className="form__fieldset">
+            <div className="form__fieldset">
               <h3>{data.form.formTitle}</h3>
-              <div className="form__button">
-                <button
-                  type="submit"
-                  onClick={handleSendForm}
-                  className="submit"
-                >
-                  {data.form.sendBtn}
-                </button>
-              </div>
               <div className="form__inputName">
                 <label htmlFor="contactName">{data.form.name}</label>
                 <input
@@ -59,7 +50,16 @@ function Form({ data }) {
                   name="contactMessage"
                 ></textarea>
               </div>
-            </fieldset>
+              <div className="form__button">
+                <button
+                  type="submit"
+                  onClick={handleSendForm}
+                  className="submit"
+                >
+                  {data.form.sendBtn}
+                </button>
+              </div>
+            </div>
           </form>
         </>
       ) : null}

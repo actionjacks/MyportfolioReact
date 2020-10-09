@@ -12,7 +12,6 @@ function WellcomePage({ data }) {
             <div className="icons">
               <a href="https://github.com/actionjacks">
                 <GitHubIcon className="icon__github" />
-                <span className="tooltiptext">github</span>
               </a>
             </div>
           </div>

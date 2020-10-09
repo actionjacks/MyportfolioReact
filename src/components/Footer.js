@@ -1,7 +1,7 @@
 import React from "react";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import FacebookIcon from "@material-ui/icons/Facebook";
-import ArrowDropUpIcon from "@material-ui/icons/ArrowDropUp";
+// import ArrowDropUpIcon from "@material-ui/icons/ArrowDropUp";
 import scroll from "react-scroll";
 
 function Footer() {
@@ -12,23 +12,31 @@ function Footer() {
   return (
     <div className="footer">
       <span className="footer_arrow">
-        <ArrowDropUpIcon className="arrow__icon" onClick={handleClick} />
+        <img
+          src="./images/arrow_icon.png"
+          className="arrow__icon"
+          onClick={handleClick}
+        />
         <p>Up</p>
       </span>
       <div className="footer__icons">
         <GitHubIcon className="githubIcon" />
         <FacebookIcon className="facebookIcon" />
       </div>
-      <ul className="footer_copyright">
+      <ul className="footer__copyright">
         <li>
-          &copy; All credit goes to Jacek Zabłocki - Copyright 2020 Jacek
-          Zabłocki
+          &copy; All credit goes to Jacek Zablocki - Copyright 2020 Jacek
+          Zablocki
         </li>
         <li>
-          Design by{" "}
+          Design by
           <a title="jaxoo" href="#">
             jaxoo
           </a>
+        </li>
+        <li className="footer__reactIcon">
+          <p>Powered by</p>
+          <img src="./images/react_icon.svg" alt="" />
         </li>
       </ul>
     </div>
