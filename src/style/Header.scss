@@ -5,9 +5,9 @@
 li:nth-child(1) a {
   color: rgb(100, 196, 121) !important;
 }
-
 @include media-queries(xsmall) {
   .header__hamburger {
+    z-index: 99;
     display: flex;
     padding: .8rem;
     z-index: 99;
@@ -19,6 +19,10 @@ li:nth-child(1) a {
     & img {
       width: 2.5rem;
       height: 2.5rem;
+    }
+    & .--active{
+      opacity: .5;
+      transition: .5;
     }
   }
 

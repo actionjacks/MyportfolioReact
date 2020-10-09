@@ -36,9 +36,15 @@ function App() {
   return (
     <>
       <div className="app">
-        {/* <button className="change__language" onClick={changeLanguage}>
-          change language
-        </button> */}
+        {language === "PL" ? (
+          <button className="change__language" onClick={changeLanguage}>
+            English
+          </button>
+        ) : (
+          <button className="change__language" onClick={changeLanguage}>
+            Polish
+          </button>
+        )}
         <Header data={pageData.content} />
       </div>
       <div className="scrollContainer">

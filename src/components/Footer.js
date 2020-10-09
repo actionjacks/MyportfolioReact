@@ -36,7 +36,9 @@ function Footer() {
         </li>
         <li className="footer__reactIcon">
           <p>Powered by</p>
-          <img src="./images/react_icon.svg" alt="" />
+          <a href="https://pl.reactjs.org/docs/getting-started.html">
+            <img src="./images/react_icon.svg" alt="" />
+          </a>
         </li>
       </ul>
     </div>

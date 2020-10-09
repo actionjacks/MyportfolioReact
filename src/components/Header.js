@@ -27,7 +27,12 @@ function Header({ data }) {
   return (
     <>
       <nav className="header__hamburger">
-        <img onClick={handleClick} src="../images/menuBurger.png" alt="" />
+        <img
+          onClick={handleClick}
+          className={active}
+          src="../images/menuBurger.png"
+          alt=""
+        />
         {data !== undefined ? (
           <>
             <nav className="header__hamburger__list">
