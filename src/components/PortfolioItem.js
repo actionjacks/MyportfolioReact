@@ -1,10 +1,12 @@
 import React from "react";
 
-function PortfolioItem({ key, item }) {
+function PortfolioItem({ image, link }) {
   return (
     <>
-      <div key={key} div className="portfolio__myWorkItem">
-        {item}
+      <div div className="portfolio__myWorkItem">
+        <a href={link}>
+          <img src={image} alt="" />
+        </a>
       </div>
     </>
   );

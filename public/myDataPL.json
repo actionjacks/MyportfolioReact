@@ -1,32 +1,37 @@
 {
-    "main": {
-        "headerOptions": ["O mnie", "portfolio", "Form", "footer"],
-        "description": "Pasjonat gier komputerowych oraz planszowych, wielbiciel programowania."
-    },
-    "wellcomePage": {
-        "title": "main name",
-        "mydesc": "lorem lorem lorem lorem lorem"
-    },
-    "about": {
-        "aboutMe": "o mnie",
-        "aboutMeDetails": "lorm lorem",
-        "contact": "contact",
-        "contactDetails": {
-            "name": "jacek",
-            "street": "fake street",
-            "zipcode": "12123",
-            "town": "wasilkof",
-            "phone": "08323121312",
-            "mail": "e-mail@oe.pl"
-        }
-    },
-    "portfolio": "moje prace",
-    "myWork": ["objekt 1", "obiekt 2", "obiekt 3"],
-    "form": {
-        "formTitle": "Napisz do mnie",
-        "name": "imie",
-        "subject": "tytu wiadomosci",
-        "message": "tresc wiadomosci",
-        "sendBtn": "WyslijTo"
+  "main": {
+    "headerOptions": ["O mnie", "portfolio", "Form", "footer"],
+    "description": "Pasjonat gier komputerowych oraz planszowych, wielbiciel programowania."
+  },
+  "wellcomePage": {
+    "title": "main name",
+    "mydesc": "lorem lorem lorem lorem lorem"
+  },
+  "about": {
+    "aboutMe": "o mnie",
+    "aboutMeDetails": "lorm lorem",
+    "contact": "contact",
+    "contactDetails": {
+      "name": "jacek",
+      "street": "fake street",
+      "zipcode": "12123",
+      "town": "wasilkof",
+      "phone": "08323121312",
+      "mail": "e-mail@oe.pl"
     }
+  },
+  "portfolio": "moje prace",
+  "myWork": [
+    {
+      "image": "./images/portfolio/my-istagram.jpg",
+      "link": "https://my-istagram-ce477.web.app/"
+    }
+  ],
+  "form": {
+    "formTitle": "Napisz do mnie",
+    "name": "imie",
+    "subject": "tytu wiadomosci",
+    "message": "tresc wiadomosci",
+    "sendBtn": "WyslijTo"
+  }
 }

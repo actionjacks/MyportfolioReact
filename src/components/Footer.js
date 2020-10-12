@@ -20,8 +20,12 @@ function Footer() {
         <p>Up</p>
       </span>
       <div className="footer__icons">
-        <GitHubIcon className="githubIcon" />
-        <FacebookIcon className="facebookIcon" />
+        <a href="https://github.com/actionjacks">
+          <GitHubIcon className="githubIcon" />
+        </a>
+        <a href="https://www.facebook.com/jaxoo.jack">
+          <FacebookIcon className="facebookIcon" />
+        </a>
       </div>
       <ul className="footer__copyright">
         <li>

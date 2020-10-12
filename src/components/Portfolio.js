@@ -6,10 +6,11 @@ function Portfolio({ data }) {
     <div className="portfolio">
       {data !== undefined ? (
         <>
+          {/* {console.log(data)} */}
           <h3 className="portfolio__title">{data.portfolio}</h3>
           <div className="porfolio__myWorkContainer">
             {data.myWork.map((item, index) => (
-              <PortfolioItem key={index} item={item} />
+              <PortfolioItem key={index} image={item.image} link={item.link} />
             ))}
           </div>
         </>

@@ -1,9 +1,21 @@
 @include media-queries(xsmall) {
     .portfolio__myWorkItem {
-        margin: 5vh;
-        background-color: yellow;
-        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin: 2vh;
+        background-color: $third-main-color;
         color: black;
+
+        & img {
+            object-fit: cover;
+            width: 100%;
+            overflow: hidden;
+            transition: .7s;
+        }
+
+        & img:hover {
+            opacity: .7;transform: scale(.98);
+        }
     }
 }
 
@@ -11,7 +23,7 @@
     .portfolio__myWorkItem {
         margin-left: 5vw;
         margin-right: 5vw;
-        background-color: yellow;
+        background-color: $third-main-color;
         width: 30%;
         color: black;
     }
