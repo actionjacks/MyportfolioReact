@@ -1,6 +1,7 @@
 @include media-queries(xsmall) {
-    .portfolio__myWorkItem {
+    .PortfolioItem {
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
         margin: 2vh;
         background-color: $third-main-color;
@@ -14,17 +15,53 @@
         }
 
         & img:hover {
-            opacity: .7;transform: scale(.98);
+            opacity: .7;
+            transform: scale(.98);
         }
+
+        & a {
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            transition: .7s;
+        }
+
+        & a:hover {
+            transform: scale(.95);
+        }
+
     }
 }
 
 @include media-queries(large) {
-    .portfolio__myWorkItem {
+    .PortfolioItem {
         margin-left: 5vw;
         margin-right: 5vw;
         background-color: $third-main-color;
         width: 30%;
         color: black;
+
+        & img {
+            object-fit: cover;
+            width: 100%;
+            overflow: hidden;
+            transition: .7s;
+        }
+
+        & img:hover {
+            opacity: .7;
+            transform: scale(.98);
+        }
+
+        & a {
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            transition: .7s;
+        }
+
+        & a:hover {
+            transform: scale(.95);
+        }
     }
 }

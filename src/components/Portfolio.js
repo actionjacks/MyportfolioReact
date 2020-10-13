@@ -10,7 +10,12 @@ function Portfolio({ data }) {
           <h3 className="portfolio__title">{data.portfolio}</h3>
           <div className="porfolio__myWorkContainer">
             {data.myWork.map((item, index) => (
-              <PortfolioItem key={index} image={item.image} link={item.link} />
+              <PortfolioItem
+                key={index}
+                image={item.image}
+                link={item.link}
+                sourceCode={item.sourceCode}
+              />
             ))}
           </div>
         </>

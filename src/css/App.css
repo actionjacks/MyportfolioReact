@@ -683,7 +683,7 @@ li:nth-child(1) a {
     font-size: 20px;
   }
   .portfolio .portfolio__title {
-    margin: 10vh;
+    margin: 5vh;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -713,13 +713,12 @@ li:nth-child(1) a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 100vh;
     background-color: #262525;
     color: white;
     font-size: 20px;
   }
   .portfolio .portfolio__title {
-    margin: 15vh;
+    margin: 6vh;
     margin-left: auto;
     margin-right: auto;
   }
@@ -737,17 +736,22 @@ li:nth-child(1) a {
 }
 
 @media (min-width: 360px) {
-  .portfolio__myWorkItem {
+  .PortfolioItem {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
     margin: 2vh;
+    background-color: rgba(59, 58, 59, 0.85);
     color: black;
   }
-  .portfolio__myWorkItem img {
+  .PortfolioItem img {
     -o-object-fit: cover;
        object-fit: cover;
     width: 100%;
@@ -755,19 +759,43 @@ li:nth-child(1) a {
     -webkit-transition: .7s;
     transition: .7s;
   }
-  .portfolio__myWorkItem img:hover {
+  .PortfolioItem img:hover {
     opacity: .7;
-    border: 10px solid white;
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+  }
+  .PortfolioItem a {
+    color: red;
+  }
+  .PortfolioItem .PortfolioItem__sourceCode {
+    color: red;
   }
 }
 
 @media (min-width: 1024px) {
-  .portfolio__myWorkItem {
+  .PortfolioItem {
     margin-left: 5vw;
     margin-right: 5vw;
-    background-color: yellow;
+    background-color: rgba(59, 58, 59, 0.85);
     width: 30%;
     color: black;
+  }
+  .PortfolioItem img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    overflow: hidden;
+    -webkit-transition: .7s;
+    transition: .7s;
+  }
+  .PortfolioItem img:hover {
+    opacity: .7;
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+  }
+  .PortfolioItem .PortfolioItem__sourceCode {
+    background-color: #fff;
+    background-color: red;
   }
 }
 

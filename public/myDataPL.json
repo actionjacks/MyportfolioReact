@@ -1,11 +1,10 @@
 {
   "main": {
-    "headerOptions": ["O mnie", "portfolio", "Form", "footer"],
-    "description": "Pasjonat gier komputerowych oraz planszowych, wielbiciel programowania."
+    "headerOptions": ["O mnie", "Portfolio", "Kontakt", "Stopka"]
   },
   "wellcomePage": {
-    "title": "main name",
-    "mydesc": "lorem lorem lorem lorem lorem"
+    "title": "Jacek Zablocki",
+    "mydesc": "Jestem wielbicielem programowania, gier komputerowych, planszowych. Codziennie uczę się pisać w javascript, python oraz Unity (C#). uczyć się nowych rzeczy. W przerwach od kodowania relaksuję się malując figurki do Age of Sigmar"
   },
   "about": {
     "aboutMe": "o mnie",
@@ -17,14 +16,20 @@
       "zipcode": "12123",
       "town": "wasilkof",
       "phone": "08323121312",
-      "mail": "e-mail@oe.pl"
+      "mail": "actionjacks22"
     }
   },
-  "portfolio": "moje prace",
+  "portfolio": "moje projekty",
   "myWork": [
     {
       "image": "./images/portfolio/my-istagram.jpg",
-      "link": "https://my-istagram-ce477.web.app/"
+      "link": "https://my-istagram-ce477.web.app/",
+      "sourceCode": "https://github.com/actionjacks/My-instagram"
+    },
+    {
+      "image": "./images/portfolio/my-discord.jpg",
+      "link": "https://my-discord-6e1f1.web.app/",
+      "sourceCode": "https://github.com/actionjacks/My-discord"
     }
   ],
   "form": {
