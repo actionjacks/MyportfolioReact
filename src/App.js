@@ -45,8 +45,10 @@ function App() {
             Polish
           </button>
         )}
+
         <Header data={pageData.content} />
       </div>
+
       <div className="scrollContainer">
         <WellcomePage data={pageData.content} />
         <section id="page-1" className="section">

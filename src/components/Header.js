@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Jello from "react-reveal/Jello";
 
 function Header({ data }) {
   const [show, handleShow] = useState(false);
@@ -37,17 +38,19 @@ function Header({ data }) {
           <>
             <nav className="header__hamburger__list">
               <ul className="header__hamburger__items">
-                {data.main.headerOptions.map((menuOption, index) => (
-                  <li className={`header__hamburger__item${active}`}>
-                    <a
-                      href={`#page-${++idSectionForScroll}`}
-                      className={"header__hamburger__link"}
-                      key={index}
-                    >
-                      {menuOption}
-                    </a>
-                  </li>
-                ))}
+                <Jello>
+                  {data.main.headerOptions.map((menuOption, index) => (
+                    <li className={`header__hamburger__item${active}`}>
+                      <a
+                        href={`#page-${++idSectionForScroll}`}
+                        className={"header__hamburger__link"}
+                        key={index}
+                      >
+                        {menuOption}
+                      </a>
+                    </li>
+                  ))}
+                </Jello>
               </ul>
             </nav>
           </>
@@ -59,17 +62,19 @@ function Header({ data }) {
             <nav className="header__list">
               <ul className="header__items">
                 {(idSectionForScroll = 0)}
-                {data.main.headerOptions.map((menuOption, index) => (
-                  <li className="header__item">
-                    <a
-                      href={`#page-${++idSectionForScroll}`}
-                      className="header__link"
-                      key={index}
-                    >
-                      {menuOption}
-                    </a>
-                  </li>
-                ))}
+                <Jello>
+                  {data.main.headerOptions.map((menuOption, index) => (
+                    <li className="header__item">
+                      <a
+                        href={`#page-${++idSectionForScroll}`}
+                        className="header__link"
+                        key={index}
+                      >
+                        {menuOption}
+                      </a>
+                    </li>
+                  ))}
+                </Jello>
               </ul>
             </nav>
           </>
