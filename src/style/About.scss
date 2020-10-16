@@ -1,7 +1,7 @@
 @include media-queries(xsmall) {
     .about {
         display: flex;
-        margin: 1.5rem;
+        margin: 1.2rem;
         color: white;
 
         & .about__profilePic {
@@ -15,8 +15,23 @@
             display: flex;
             flex-direction: column;
             margin-left: 10vw;
-            line-height: 1.5rem;
-            font-size: .8rem;
+            line-height: 1.1rem;
+            font-size: .5rem;
+        }
+    }
+}
+
+@include media-queries(small) {
+    .about {
+        margin: 1.5rem;
+
+        & .about__profilePic {
+            height: 25vh;
+            width: 25vh;
+        }
+
+        & .about__details {
+            line-height: 1rem;
         }
     }
 }
@@ -30,8 +45,8 @@
 
         & .about__profilePic {
             object-fit: cover;
-            height: 20vh;
-            width: 20vh;
+            height: 30vh;
+            width: 30vh;
             border-radius: 50%;
         }
 
@@ -39,7 +54,8 @@
             display: flex;
             flex-direction: column;
             margin-left: 10vw;
-            line-height: 2rem;
+            font-size: .8rem;
+            line-height: 2.2rem;
         }
     }
 }

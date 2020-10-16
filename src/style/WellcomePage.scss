@@ -2,24 +2,25 @@
   visibility: visible;
 }
 
-// need style for mobile
-.errorDataNotFound {
-  height: 100vh;
-  background: url("/images/jsonError.jpg");
-  background-size: 100% 100%;
-  background-position-x: center;
-  background-position-y: top;
-  background-attachment: fixed;
-  background-origin: initial;
-  background-clip: initial;
-  background-color: rgb(22, 20, 21);
+@include media-queries(xsmall) {
+  .errorDataNotFound {
+    height: 100vh;
+    background: url("/images/jsonError.png");
+    background-size: 100% 100%;
+    background-position-x: center;
+    background-position-y: top;
+    background-attachment: fixed;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: rgb(22, 20, 21);
 
-  & h1 {
-    color: rgb(230, 136, 136);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    & h1 {
+      color: rgb(4, 4, 4);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
 }
 
@@ -44,13 +45,13 @@
       text-shadow: 2px 2px 0 $first-main-font-color, 2px -2px 0 $first-main-font-color, -2px 2px 0 $first-main-font-color, -2px -2px 0 $first-main-font-color, 2px 0px 0 $first-main-font-color, 0px 2px 0 $first-main-font-color, -2px 0px 0 $first-main-font-color, 0px -2px 0 $first-main-font-color;
 
       & h1 {
-        color: black;
+        color: rgb(34, 39, 36);
         font-size: 1rem;
         margin-bottom: .5rem;
       }
 
       & h3 {
-        color: black;
+        color: rgb(34, 39, 36);
         font-size: .6rem;
         line-height: 1.2rem;
       }

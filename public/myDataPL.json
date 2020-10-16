@@ -4,19 +4,19 @@
   },
   "wellcomePage": {
     "title": "Jacek Zablocki",
-    "mydesc": "Jestem wielbicielem programowania, gier komputerowych, planszowych. Codziennie uczę się pisać w javascript, python oraz Unity (C#). uczyć się nowych rzeczy. W przerwach od kodowania relaksuję się malując figurki do Age of Sigmar"
+    "mydesc": "Programowanie to moja pasja, uwielbiam REACT, co nie zmienia faktu, ze uczenie sie nowych frameworkow nie sprawia mi przyjemnosci, wrecz przeciwnie. Javascript, Python, Unity C# oraz malowanie figurek do Warhammer Age of Sigmar :P. Obecnie pochylam sie mocno nad mozliwosciami jakie daje FIREBASE od Google."
   },
   "about": {
     "aboutMe": "o mnie",
-    "aboutMeDetails": "lorm lorem",
-    "contact": "contact",
+    "aboutMeDetails": "moja pasja informatyka",
+    "contact": "kontakt",
     "contactDetails": {
-      "name": "jacek",
-      "street": "fake street",
-      "zipcode": "12123",
-      "town": "wasilkof",
-      "phone": "08323121312",
-      "mail": "actionjacks22"
+      "name": "Jacek Zablocki",
+      "street": "przejazdowa 3",
+      "zipcode": "16-010",
+      "town": "Wasilkow",
+      "phone": "795616929",
+      "mail": "actionjacks22@gmail.com"
     }
   },
   "portfolio": "moje projekty",
@@ -33,10 +33,10 @@
     }
   ],
   "form": {
-    "formTitle": "Napisz do mnie",
-    "name": "imie",
-    "subject": "tytu wiadomosci",
+    "formTitle": "napisz do mnie",
+    "name": "imie / nazwa",
+    "subject": "tytul wiadomosci",
     "message": "tresc wiadomosci",
-    "sendBtn": "WyslijTo"
+    "sendBtn": "wyslij"
   }
 }

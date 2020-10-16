@@ -3,20 +3,20 @@
     "headerOptions": ["About me", "Portfolio", "Contact", "Footer"]
   },
   "wellcomePage": {
-    "title": "main name",
-    "mydesc": "lorem lorem lorem lorem lorem"
+    "title": "Jacek Zablocki",
+    "mydesc": "Programming is my passion, I love REACT, which does not change the fact that learning new frameworks is not fun for me, quite the opposite. Javascript, Python, Unity (C #) and painting figures for Warhammer Age of Sigmar: P. Currently, I am focusing on the possibilities offered by FIREBASE from Google."
   },
   "about": {
-    "aboutMe": "o mnie",
-    "aboutMeDetails": "lorm lorem",
-    "contact": "contact",
+    "aboutMe": "about me",
+    "aboutMeDetails": "my passion for programming",
+    "contact": "Contact",
     "contactDetails": {
-      "name": "jacek",
-      "street": "fake street",
-      "zipcode": "12123",
-      "town": "wasilkof",
-      "phone": "08323121312",
-      "mail": "e-mail@oe.pl"
+      "name": "Jacek Zablocki",
+      "street": "przejazdowa 3",
+      "zipcode": "16-010",
+      "town": "Wasilkow",
+      "phone": "795616929",
+      "mail": "actionjacks22@gmail.com"
     }
   },
   "portfolio": "my projects",
@@ -25,13 +25,18 @@
       "image": "./images/portfolio/my-istagram.jpg",
       "link": "https://my-istagram-ce477.web.app/",
       "sourceCode": "https://github.com/actionjacks/My-instagram"
+    },
+    {
+      "image": "./images/portfolio/my-discord.jpg",
+      "link": "https://my-discord-6e1f1.web.app/",
+      "sourceCode": "https://github.com/actionjacks/My-discord"
     }
   ],
   "form": {
-    "formTitle": "Napisz do mnie",
-    "name": "imie",
-    "subject": "tytu wiadomosci",
-    "message": "tresc wiadomosci",
-    "sendBtn": "WyslijTo"
+    "formTitle": "write to me",
+    "name": "name",
+    "subject": "message title",
+    "message": "Message content",
+    "sendBtn": "send"
   }
 }
