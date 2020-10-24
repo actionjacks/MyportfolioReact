@@ -1,5 +1,6 @@
 @include media-queries(xsmall) {
     .PortfolioItem {
+        border-radius: 22px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -8,6 +9,7 @@
         color: black;
 
         & img {
+            border-radius: 22px;
             object-fit: cover;
             width: 100%;
             overflow: hidden;
@@ -34,34 +36,44 @@
 }
 
 @include media-queries(large) {
-    .PortfolioItem {
-        margin-left: 5vw;
-        margin-right: 5vw;
-        background-color: $third-main-color;
-        width: 30%;
-        color: black;
+    .porfolio__myWorkContainer {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap !important;
 
-        & img {
-            object-fit: cover;
-            width: 100%;
-            overflow: hidden;
-            transition: .7s;
-        }
+        .PortfolioItem {
+            border-radius: 22px;
+            margin-left: 8vw;
+            margin-right: 8vw;
+            margin-bottom: 5vh;
+            background-color: $third-main-color;
+            width: 33%;
+            color: black;
 
-        & img:hover {
-            opacity: .7;
-            transform: scale(.98);
-        }
+            & img {
+                border-radius: 22px;
+                object-fit: cover;
+                width: 100%;
+                overflow: hidden;
+                transition: .7s;
+            }
 
-        & a {
-            color: white;
-            text-decoration: none;
-            text-align: center;
-            transition: .7s;
-        }
+            & img:hover {
+                opacity: .7;
+                transform: scale(.98);
+            }
 
-        & a:hover {
-            transform: scale(.95);
+            & a {
+                color: white;
+                text-decoration: none;
+                text-align: center;
+                transition: .7s;
+            }
+
+            & a:hover {
+                transform: scale(.95);
+            }
         }
     }
+
 }

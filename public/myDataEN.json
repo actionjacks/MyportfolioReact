@@ -30,6 +30,16 @@
       "image": "./images/portfolio/my-discord.jpg",
       "link": "https://my-discord-6e1f1.web.app/",
       "sourceCode": "https://github.com/actionjacks/My-discord"
+    },
+    {
+      "image": "./images/portfolio/my-amazon.jpg",
+      "link": "#",
+      "sourceCode": "https://github.com/actionjacks/my-eShop"
+    },
+    {
+      "image": "./images/portfolio/my-hearthstone.jpg",
+      "link": "https://heartstone-api.web.app/",
+      "sourceCode": "https://github.com/actionjacks/reactblizzardapi"
     }
   ],
   "form": {
