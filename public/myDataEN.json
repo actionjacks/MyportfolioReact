@@ -4,7 +4,7 @@
   },
   "wellcomePage": {
     "title": "Jacek Zablocki",
-    "mydesc": "Programming is my passion, I love REACT, which does not change the fact that learning new frameworks is not fun for me, quite the opposite. Javascript, Python, Unity (C #) and painting figures for Warhammer Age of Sigmar: P. Currently, I am focusing on the possibilities offered by FIREBASE from Google."
+    "mydesc": "Programming is my passion, I love REACT, which does not change the fact that learning new frameworks is not fun for me, quite the opposite. Javascript, Python, Unity C# and painting figures for Warhammer Age of Sigmar: P. Currently, I am focusing on the possibilities offered by FIREBASE from Google."
   },
   "about": {
     "aboutMe": "about me",
@@ -33,13 +33,23 @@
     },
     {
       "image": "./images/portfolio/my-amazon.jpg",
-      "link": "#",
+      "link": "#page-2",
       "sourceCode": "https://github.com/actionjacks/my-eShop"
+    },
+    {
+      "image": "./images/portfolio/my-movieDB.jpg",
+      "link": "https://movie-api-2cf4f.web.app/",
+      "sourceCode": "https://github.com/actionjacks/MOVIE_API_DB"
     },
     {
       "image": "./images/portfolio/my-hearthstone.jpg",
       "link": "https://heartstone-api.web.app/",
       "sourceCode": "https://github.com/actionjacks/reactblizzardapi"
+    },
+    {
+      "image": "./images/portfolio/my-chattingApp.jpg",
+      "link": "#page-2",
+      "sourceCode": "https://github.com/actionjacks/wazzup-mongoDB"
     }
   ],
   "form": {
