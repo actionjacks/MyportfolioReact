@@ -37,6 +37,11 @@
       "sourceCode": "https://github.com/actionjacks/my-eShop"
     },
     {
+      "image": "./images/portfolio/my-covidTracker.jpg",
+      "link": "https://covid-tracker-v1-0.web.app/",
+      "sourceCode": "https://github.com/actionjacks/covid__tracker"
+    },
+    {
       "image": "./images/portfolio/my-movieDB.jpg",
       "link": "https://movie-api-2cf4f.web.app/",
       "sourceCode": "https://github.com/actionjacks/MOVIE_API_DB"
