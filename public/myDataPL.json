@@ -23,36 +23,43 @@
   "myWork": [
     {
       "image": "./images/portfolio/my-istagram.jpg",
+      "isDeployed": "true",
       "link": "https://my-istagram-ce477.web.app/",
       "sourceCode": "https://github.com/actionjacks/My-instagram"
     },
     {
       "image": "./images/portfolio/my-discord.jpg",
+      "isDeployed": "true",
       "link": "https://my-discord-6e1f1.web.app/",
       "sourceCode": "https://github.com/actionjacks/My-discord"
     },
     {
       "image": "./images/portfolio/my-amazon.jpg",
+      "isDeployed": "false",
       "link": "#page-2",
       "sourceCode": "https://github.com/actionjacks/my-eShop"
     },
     {
       "image": "./images/portfolio/my-covidTracker.jpg",
+      "isDeployed": "true",
       "link": "https://covid-tracker-v1-0.web.app/",
       "sourceCode": "https://github.com/actionjacks/covid__tracker"
     },
     {
       "image": "./images/portfolio/my-movieDB.jpg",
+      "isDeployed": "true",
       "link": "https://movie-api-2cf4f.web.app/",
       "sourceCode": "https://github.com/actionjacks/MOVIE_API_DB"
     },
     {
       "image": "./images/portfolio/my-hearthstone.jpg",
+      "isDeployed": "true",
       "link": "https://heartstone-api.web.app/",
       "sourceCode": "https://github.com/actionjacks/reactblizzardapi"
     },
     {
       "image": "./images/portfolio/my-chattingApp.jpg",
+      "isDeployed": "false",
       "link": "#page-2",
       "sourceCode": "https://github.com/actionjacks/wazzup-mongoDB"
     }

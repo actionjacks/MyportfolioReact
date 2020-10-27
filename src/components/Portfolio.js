@@ -14,6 +14,7 @@ function Portfolio({ data }) {
                 key={index}
                 image={item.image}
                 link={item.link}
+                isDeployed={item.isDeployed}
                 sourceCode={item.sourceCode}
               />
             ))}

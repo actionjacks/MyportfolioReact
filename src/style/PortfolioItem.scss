@@ -1,12 +1,25 @@
 @include media-queries(xsmall) {
     .PortfolioItem {
         border-radius: 22px;
+        position: relative;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         margin: 2vh;
         background-color: $third-main-color;
         color: black;
+
+        & .isDeployed {
+            opacity: .5;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 20px;
+        }
 
         & img {
             border-radius: 22px;
