@@ -22,6 +22,12 @@
   "portfolio": "moje projekty",
   "myWork": [
     {
+      "image": "./images/portfolio/my-amazon.jpg",
+      "isDeployed": "true",
+      "link": "https://my-eshoop.web.app/",
+      "sourceCode": "https://github.com/actionjacks/my-eShop"
+    },
+    {
       "image": "./images/portfolio/my-istagram.jpg",
       "isDeployed": "true",
       "link": "https://my-istagram-ce477.web.app/",
@@ -34,10 +40,10 @@
       "sourceCode": "https://github.com/actionjacks/My-discord"
     },
     {
-      "image": "./images/portfolio/my-amazon.jpg",
-      "isDeployed": "false",
-      "link": "#page-2",
-      "sourceCode": "https://github.com/actionjacks/my-eShop"
+      "image": "./images/portfolio/my-spotify.jpg",
+      "isDeployed": "true",
+      "link": "https://actionjacks.github.io/mySpotify/",
+      "sourceCode": "https://github.com/actionjacks/mySpotify"
     },
     {
       "image": "./images/portfolio/my-covidTracker.jpg",
