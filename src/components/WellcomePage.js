@@ -5,7 +5,7 @@ import RubberBand from "react-reveal/RubberBand";
 function WellcomePage({ data }) {
   return (
     <>
-      {data !== undefined ? (
+      {data?.wellcomePage ? (
         <section className="wellcomePage">
           <div className="wellcomePage__banerText">
             <RubberBand>

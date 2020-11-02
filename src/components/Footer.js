@@ -1,7 +1,6 @@
 import React from "react";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import FacebookIcon from "@material-ui/icons/Facebook";
-// import ArrowDropUpIcon from "@material-ui/icons/ArrowDropUp";
 import scroll from "react-scroll";
 
 function Footer() {

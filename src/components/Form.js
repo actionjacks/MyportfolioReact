@@ -13,7 +13,7 @@ function Form({ data }) {
   };
   return (
     <div className="form">
-      {data !== undefined ? (
+      {data?.form ? (
         <>
           <form className="form__contactForm">
             <MailOutlineIcon className="form__icon" />

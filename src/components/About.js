@@ -3,7 +3,7 @@ import React from "react";
 function About({ data }) {
   return (
     <div className="about">
-      {data !== undefined ? (
+      {data?.about ? (
         <>
           <img
             className="about__profilePic"

@@ -34,7 +34,7 @@ function Header({ data }) {
           src="../images/menuBurger.png"
           alt=""
         />
-        {data !== undefined ? (
+        {data?.main ? (
           <>
             <nav className="header__hamburger__list">
               <ul className="header__hamburger__items">
@@ -57,7 +57,7 @@ function Header({ data }) {
         ) : null}
       </nav>
       <div className={`header ${show && "nav__black"}`}>
-        {data !== undefined ? (
+        {data?.main ? (
           <>
             <nav className="header__list">
               <ul className="header__items">

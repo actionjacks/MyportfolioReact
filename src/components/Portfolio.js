@@ -4,12 +4,11 @@ import PortfolioItem from "./PortfolioItem";
 function Portfolio({ data }) {
   return (
     <div className="portfolio">
-      {data !== undefined ? (
+      {data?.portfolio ? (
         <>
-          {/* {console.log(data)} */}
           <h3 className="portfolio__title">{data.portfolio}</h3>
           <div className="porfolio__myWorkContainer">
-            {data.myWork.map((item, index) => (
+            {data?.myWork.map((item, index) => (
               <PortfolioItem
                 key={index}
                 image={item.image}
