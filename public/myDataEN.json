@@ -46,6 +46,18 @@
       "sourceCode": "https://github.com/actionjacks/mySpotify"
     },
     {
+      "image": "./images/portfolio/my-tinder.jpg",
+      "isDeployed": "true",
+      "link": "https://my-tinder-59fcf.web.app/",
+      "sourceCode": "https://github.com/actionjacks/my-tinder"
+    },
+    {
+      "image": "./images/portfolio/my-Twitter.jpg",
+      "isDeployed": "true",
+      "link": "https://my-twitter-92680.web.app/",
+      "sourceCode": "https://github.com/actionjacks/myTwitter"
+    },
+    {
       "image": "./images/portfolio/my-covidTracker.jpg",
       "isDeployed": "true",
       "link": "https://covid-tracker-v1-0.web.app/",
