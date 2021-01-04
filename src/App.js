@@ -1,14 +1,18 @@
 import React, { useState, useEffect } from "react";
 import "./App.scss";
 //components
+import ThemeSwitcher from "./components/ThemeSwitcher";
 import Header from "./components/Header";
 import WellcomePage from "./components/WellcomePage";
 import About from "./components/About";
 import Form from "./components/Form";
 import Portfolio from "./components/Portfolio";
 import Footer from "./components/Footer";
+//redux
+import { connect } from "react-redux";
+import { changeTheme } from "./actions";
 
-function App() {
+function App({ theme }) {
   const [pageData, setPageData] = useState({});
   const [language, setlanguage] = useState("PL");
 
@@ -34,7 +38,7 @@ function App() {
   }, [language]);
 
   return (
-    <>
+    <div className={`${theme}`}>
       <div className="app">
         {language === "PL" ? (
           <button className="change__language" onClick={changeLanguage}>
@@ -45,11 +49,16 @@ function App() {
             Polish
           </button>
         )}
-
         <Header data={pageData.content} />
       </div>
-
       <div className="scrollContainer">
+        {/* delete after test */}
+        <br />
+        <br />
+        <br />
+        <p>{theme}</p>
+        {/* delete after test */}
+        <ThemeSwitcher />
         <WellcomePage data={pageData.content} />
         <section id="page-1" className="section">
           <About data={pageData.content} />
@@ -66,8 +75,11 @@ function App() {
           </div>
         </section>
       </div>
-    </>
+    </div>
   );
 }
+const mapStateToProps = (state) => {
+  return { theme: state.themeColor };
+};
 
-export default App;
+export default connect(mapStateToProps, { changeTheme })(App);
