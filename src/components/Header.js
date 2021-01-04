@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Jello from "react-reveal/Jello";
 
-function Header({ data }) {
+function Header({ data, theme }) {
   const [show, handleShow] = useState(false);
   const [active, handleActive] = useState("--inactive");
 
@@ -43,7 +43,7 @@ function Header({ data }) {
                     <li className={`header__hamburger__item${active}`}>
                       <a
                         href={`#page-${++idSectionForScroll}`}
-                        className={"header__hamburger__link"}
+                        className={`header__hamburger__link ${theme}`}
                         key={index}
                       >
                         {menuOption}
@@ -56,7 +56,7 @@ function Header({ data }) {
           </>
         ) : null}
       </nav>
-      <div className={`header ${show && "nav__black"}`}>
+      <div className={`header ${show && `nav__black ${theme}`}`}>
         {data?.main ? (
           <>
             <nav className="header__list">
@@ -64,10 +64,10 @@ function Header({ data }) {
                 {(idSectionForScroll = 0)}
                 <Jello>
                   {data.main.headerOptions.map((menuOption, index) => (
-                    <li className="header__item">
+                    <li className={`header__item ${theme}`}>
                       <a
                         href={`#page-${++idSectionForScroll}`}
-                        className="header__link"
+                        className={`header__link ${theme}`}
                         key={index}
                       >
                         {menuOption}

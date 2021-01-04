@@ -1,6 +1,16 @@
+//dark theme
+$first-main-color--dark:rgb(73, 100, 150);
+
+$third-main-color--dark:rgba(29, 28, 29, 0.919);
+
 $first-main-color:rgb(255, 255, 255);
 $second-main-color:rgb(255, 255, 255);
 $third-main-color:rgba(59, 58, 59, 0.85);
 
 $first-main-font-color:rgb(54, 152, 48);
-$second-main-font-color:rgb(13, 235, 61)
+$second-main-font-color:rgb(13, 235, 61);
+
+// white theme
+$first-main-color--white:rgb(114, 214, 136);
+$second-main-font-color--white:rgb(255, 255, 255);
+$third-main-color--white: rgba(145, 83, 121, 0.631);

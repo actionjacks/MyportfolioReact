@@ -49,13 +49,10 @@ function App({ theme }) {
             Polish
           </button>
         )}
-        <Header data={pageData.content} />
+        <Header data={pageData.content} theme={theme} />
       </div>
       <div className="scrollContainer">
         {/* delete after test */}
-        <br />
-        <br />
-        <br />
         <p>{theme}</p>
         {/* delete after test */}
         <ThemeSwitcher />

@@ -1,9 +1,9 @@
-.header.nav__black {
-  background: $third-main-color;
+.header.nav__black.white {
+  background: $third-main-color--white;
 }
 
-li:nth-child(1) a {
-  color: rgb(100, 196, 121) !important;
+.header.nav__black.black {
+  background: $third-main-color--dark;
 }
 
 .header__items {
@@ -95,10 +95,17 @@ li:nth-child(1) a {
         top: 0;
         right: 0;
 
+        & .header__hamburger__link.white {
+          color: $second-main-font-color--white;
+        }
+
+        & .header__hamburger__link.black {
+          color: $first-main-color--dark;
+        }
+
         & .header__hamburger__link {
           font-size: .8rem;
           margin-left: 5px;
-          color: $first-main-font-color;
           letter-spacing: 1px;
           text-transform: uppercase;
           text-decoration: none;
@@ -146,7 +153,6 @@ li:nth-child(1) a {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: rgba(254, 254, 254, 0);
     transition-timing-function: ease-in;
     transition: ease-in 1s;
 
@@ -166,20 +172,32 @@ li:nth-child(1) a {
 
           & .header__link {
             font-size: .9rem;
-            color: $first-main-font-color;
             letter-spacing: 1px;
             text-transform: uppercase;
             text-decoration: none;
             font-family: headerFont;
+
+            &.white {
+              color: $second-main-font-color--white;
+            }
+
+            &.black {
+              color: $first-main-color--dark;
+            }
           }
 
+          // color: $first-main-font-color;
           & .header__link:hover {
             cursor: url(/images/cursors/pointer.png), auto !important;
           }
         }
 
-        & .header__item:hover {
-          text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
+        & .header__item.white:hover {
+          text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #b3bab1bf, 0 0 30px #b3bab1bf, 0 0 40px #b3bab1bf, 0 0 55px #b3bab1bf, 0 0 75px #b3bab1bf;
+        }
+
+        & .header__item.black:hover {
+          text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #2f1c57, 0 0 30px #2f1c57, 0 0 40px #2f1c57, 0 0 55px #2f1c57, 0 0 75px #2f1c57;
         }
       }
     }
