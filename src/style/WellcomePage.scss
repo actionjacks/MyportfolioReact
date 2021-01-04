@@ -12,10 +12,8 @@
     background-attachment: fixed;
     background-origin: initial;
     background-clip: initial;
-    background-color: rgb(22, 20, 21);
 
     & h1 {
-      color: rgb(4, 4, 4);
       position: absolute;
       top: 50%;
       left: 50%;
@@ -34,26 +32,47 @@
     background-attachment: fixed;
     background-origin: initial;
     background-clip: initial;
-    background-color: rgb(255, 255, 255);
 
     & .wellcomePage__banerText {
-      color: white;
       text-align: left;
       padding-top: 30vh;
       margin: 0 10vw;
-      color: #FFFFFF;
-      text-shadow: 2px 2px 0 $first-main-font-color, 2px -2px 0 $first-main-font-color, -2px 2px 0 $first-main-font-color, -2px -2px 0 $first-main-font-color, 2px 0px 0 $first-main-font-color, 0px 2px 0 $first-main-font-color, -2px 0px 0 $first-main-font-color, 0px -2px 0 $first-main-font-color;
+
+      &.wellcomePage__banerText.white {
+        text-shadow: 2px 2px 0 $first-main-font-color--white, 2px -2px 0 $first-main-font-color--white, -2px 2px 0 $first-main-font-color--white, -2px -2px 0 $first-main-font-color--white, 2px 0px 0 $first-main-font-color--white, 0px 2px 0 $first-main-font-color--white, -2px 0px 0 $first-main-font-color--white, 0px -2px 0 $first-main-font-color--white;
+      }
+
+      &.wellcomePage__banerText.black {
+        text-shadow: 2px 2px 0 $first-main-font-color--black, 2px -2px 0 $first-main-font-color--black, -2px 2px 0 $first-main-font-color--black, -2px -2px 0 $first-main-font-color--black, 2px 0px 0 $first-main-font-color--black, 0px 2px 0 $first-main-font-color--black, -2px 0px 0 $first-main-font-color--black, 0px -2px 0 $first-main-font-color--black;
+      }
 
       & h1 {
         color: rgb(34, 39, 36);
         font-size: 1rem;
         margin-bottom: .5rem;
+        transition: 1s;
+
+        &.white {
+          color: $second-main-font-color--white;
+        }
+
+        &.black {
+          color: $third-main-color--dark;
+        }
       }
 
       & h3 {
-        color: rgb(34, 39, 36);
         font-size: .6rem;
         line-height: 1.2rem;
+        transition: .5s;
+
+        &.white {
+          color: $second-main-font-color--white;
+        }
+
+        &.black {
+          color: $third-main-color--dark;
+        }
       }
     }
 
@@ -86,10 +105,8 @@
     background-attachment: fixed;
     background-origin: initial;
     background-clip: initial;
-    background-color: rgb(22, 20, 21);
 
     & .wellcomePage__banerText {
-      color: white;
       text-align: center;
       padding: 200px;
 

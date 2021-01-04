@@ -56,7 +56,7 @@ function App({ theme }) {
         <p>{theme}</p>
         {/* delete after test */}
         <ThemeSwitcher />
-        <WellcomePage data={pageData.content} />
+        <WellcomePage data={pageData.content} theme={theme} />
         <section id="page-1" className="section">
           <About data={pageData.content} />
         </section>

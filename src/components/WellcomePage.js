@@ -2,15 +2,15 @@ import React from "react";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import RubberBand from "react-reveal/RubberBand";
 
-function WellcomePage({ data }) {
+function WellcomePage({ data, theme }) {
   return (
     <>
       {data?.wellcomePage ? (
         <section className="wellcomePage">
-          <div className="wellcomePage__banerText">
+          <div className={`wellcomePage__banerText ${theme}`}>
             <RubberBand>
-              <h1>{data.wellcomePage.title}</h1>
-              <h3>{data.wellcomePage.mydesc}</h3>
+              <h1 className={`${theme}`}>{data.wellcomePage.title}</h1>
+              <h3 className={`${theme}`}>{data.wellcomePage.mydesc}</h3>
             </RubberBand>
             <div className="icons">
               <a href="https://github.com/actionjacks">
