@@ -43,8 +43,18 @@ input:hover {
   cursor: url(/images/cursors/pointer.png), auto !important;
 }
 
-.scrollContainer,
-.section {
-  border-top: 1px solid black;
-  background-color: rgb(29, 29, 29);
-}
+// .scrollContainer.black,
+// .section.black {
+//   border-top: 1px solid $third-main-color--dark;
+//   background-color: $third-main-color--dark;
+//   color: $first-main-color--dark;
+//   transition: .7s;
+// }
+
+// .scrollContainer.white,
+// .section.white {
+//   border-top: 1px solid $first-main-font-color--white;
+//   background-color: $second-main-font-color--white;
+//   color: $first-main-font-color--white;
+//   transition: .7s;
+// }

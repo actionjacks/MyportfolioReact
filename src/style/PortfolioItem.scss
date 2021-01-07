@@ -6,7 +6,7 @@
         flex-direction: column;
         justify-content: space-between;
         margin: 2vh;
-        background-color: $third-main-color;
+        // background-color: $third-main-color;
         color: black;
 
         & .isDeployed {
@@ -59,7 +59,7 @@
             margin-left: 8vw;
             margin-right: 8vw;
             margin-bottom: 5vh;
-            background-color: $third-main-color;
+            // background-color: $third-main-color;
             width: 33%;
             color: black;
 
@@ -90,3 +90,7 @@
     }
 
 }
+
+// .PortfolioItem {
+//     background-color: red;
+// }

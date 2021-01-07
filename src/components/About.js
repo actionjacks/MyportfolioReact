@@ -1,8 +1,8 @@
 import React from "react";
 
-function About({ data }) {
+function About({ data, theme }) {
   return (
-    <div className="about">
+    <div className={`about ${theme}`}>
       {data?.about ? (
         <>
           <img
