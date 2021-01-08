@@ -1,7 +1,6 @@
 @include media-queries(xsmall) {
     .footer {
         position: relative;
-        color: #fff;
         display: flex;
         flex-direction: column;
 
@@ -9,7 +8,6 @@
             position: absolute;
             top: -25px;
             right: 10px;
-            color: #fff;
 
             & img {
                 margin-right: .1rem;
@@ -43,17 +41,12 @@
 
             .githubIcon,
             .facebookIcon {
-                color: rgb(136, 136, 136);
                 font-size: 35px !important;
                 transition: .7s;
                 border: none !important;
                 margin-left: 10px;
             }
 
-            .githubIcon:hover,
-            .facebookIcon:hover {
-                color: white;
-            }
         }
 
         .footer__copyright {
@@ -83,17 +76,13 @@
 @include media-queries(large) {
     .footer {
         position: relative;
-        background-color: rgb(4, 4, 4);
-        color: #fff;
         display: flex;
         flex-direction: column;
-        width: 100%;
 
         .footer_arrow {
             position: absolute;
             top: -25px;
             right: 10px;
-            color: #fff;
 
             & img {
                 margin-right: 5rem;
@@ -122,16 +111,10 @@
 
             .githubIcon,
             .facebookIcon {
-                color: rgb(136, 136, 136);
                 font-size: 35px !important;
                 transition: .7s;
                 border: none !important;
                 margin-left: 10px;
-            }
-
-            .githubIcon:hover,
-            .facebookIcon:hover {
-                color: white;
             }
         }
 
@@ -157,16 +140,43 @@
     }
 }
 
+#jaxoo {
+    color: $first-icon-color--white;
+}
+
+//themes colors
 .footer.white {
-    border-top: 1px solid $first-main-font-color--white;
-    background-color: $second-main-font-color--white;
-    color: $third-main-color--white;
+    border-top: 1px solid $first-font-color--white;
+    box-shadow: inset 0 0 3px $first-font-color--white;
+    background-color: $first-background-color--white;
+    color: $first-font-color--white;
     transition: .7s;
 }
 
 .footer.black {
     border-top: 1px solid $third-main-color--dark;
-    background-color: $third-main-color--dark;
-    color: $first-main-color--dark;
+    box-shadow: inset 0 0 3px $third-main-color--white;
+    background-color: $first-background-color--black;
+    color: $first-font-color--black;
     transition: .7s;
+}
+
+.githubIcon.white,
+.facebookIcon.white {
+    color: $first-icon-color--white;
+}
+
+.githubIcon.white:hover,
+.facebookIcon.white:hover {
+    color: $first-icon-colorHover--white;
+}
+
+.githubIcon.black,
+.facebookIcon.black {
+    color: $first-icon-color--black;
+}
+
+.githubIcon.black:hover,
+.facebookIcon.black:hover {
+    color: $first-icon-colorHover--black;
 }

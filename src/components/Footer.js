@@ -16,24 +16,23 @@ function Footer({ theme }) {
           className="arrow__icon"
           onClick={handleClick}
         />
-        <p>Up</p>
       </span>
       <div className="footer__icons">
         <a href="https://github.com/actionjacks">
-          <GitHubIcon className="githubIcon" />
+          <GitHubIcon className={`githubIcon ${theme}`} />
         </a>
         <a href="https://www.facebook.com/jaxoo.jack">
-          <FacebookIcon className="facebookIcon" />
+          <FacebookIcon className={`facebookIcon ${theme}`} />
         </a>
       </div>
       <ul className="footer__copyright">
         <li>
-          &copy; All credit goes to Jacek Zablocki - Copyright 2020 Jacek
+          &copy; All credit goes to Jacek Zablocki - Copyright 2021 Jacek
           Zablocki
         </li>
         <li>
           Design by
-          <a title="jaxoo" href="#">
+          <a title="jaxoo" href="#" id="jaxoo">
             jaxoo
           </a>
         </li>
