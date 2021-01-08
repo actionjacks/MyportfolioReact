@@ -3,7 +3,6 @@
         display: flex;
         padding: 10vh;
         color: white;
-        box-shadow: inset 0 0 15px #c0cec2; //sprawdzic
 
         & .about__profilePic {
             object-fit: cover;
@@ -24,8 +23,6 @@
 
 @include media-queries(small) {
     .about {
-        // margin: 1.5rem;
-
         & .about__profilePic {
             height: 25vh;
             width: 25vh;
@@ -62,12 +59,14 @@
 }
 
 .about.white {
+    box-shadow: inset 0 0 10px $third-main-color--white;
     background-color: $second-main-font-color--white;
     color: $first-main-font-color--white;
     transition: .7s;
 }
 
 .about.black {
+    box-shadow: inset 0 0 10px $first-main-color--dark;
     background-color: $third-main-color--dark;
     color: $first-main-color--dark;
     transition: .7s;

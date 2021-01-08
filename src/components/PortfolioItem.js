@@ -1,9 +1,9 @@
 import React from "react";
 
-function PortfolioItem({ image, link, sourceCode, isDeployed }) {
+function PortfolioItem({ image, link, sourceCode, isDeployed, theme }) {
   return (
     <>
-      <div div className="PortfolioItem">
+      <div div className={`PortfolioItem ${theme}`}>
         <a href={link}>
           <img src={image} alt="" />
         </a>

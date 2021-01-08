@@ -3,13 +3,13 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import scroll from "react-scroll";
 
-function Footer() {
+function Footer({ theme }) {
   const handleClick = () => {
     scroll.animateScroll.scrollToTop();
   };
 
   return (
-    <div className="footer">
+    <div className={`footer ${theme}`}>
       <span className="footer_arrow">
         <img
           src="./images/arrow_icon.png"

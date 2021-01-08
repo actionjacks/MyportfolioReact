@@ -61,11 +61,11 @@ function App({ theme }) {
           <Portfolio data={pageData.content} theme={theme} />
         </section>
         <section id="page-3" className={`section`}>
-          <Form data={pageData.content} />
+          <Form data={pageData.content} theme={theme} />
         </section>
         <section id="page-4" className={`section`}>
           <div className="app__footer">
-            <Footer />
+            <Footer theme={theme} />
           </div>
         </section>
       </div>

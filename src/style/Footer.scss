@@ -1,30 +1,28 @@
 @include media-queries(xsmall) {
     .footer {
-        width: 100%;
         position: relative;
-        background-color: rgb(4, 4, 4);
         color: #fff;
         display: flex;
         flex-direction: column;
-        width: 100%;
 
         .footer_arrow {
             position: absolute;
             top: -25px;
             right: 10px;
             color: #fff;
-            & img{
+
+            & img {
                 margin-right: .1rem;
             }
-            & p{
+
+            & p {
                 text-align: left;
                 margin: .7rem;
             }
 
-            .arrow__icon {transform: rotate(-90deg);
+            .arrow__icon {
+                transform: rotate(-90deg);
                 width: 5rem;
-                // background-color: rgb(136, 136, 136);
-                // border: 10px solid white !important;
                 transition: .7s;
             }
 
@@ -64,14 +62,17 @@
             text-align: center;
             padding: 10px;
         }
-        .footer__reactIcon{
+
+        .footer__reactIcon {
             display: flex;
             margin-top: .3rem;
             margin-left: 50%;
-            & img{
+
+            & img {
                 width: 1.2rem;
             }
-            & p{
+
+            & p {
                 text-align: left;
                 margin: .7rem;
             }
@@ -93,14 +94,14 @@
             top: -25px;
             right: 10px;
             color: #fff;
-            & img{
+
+            & img {
                 margin-right: 5rem;
             }
 
-            .arrow__icon {transform: rotate(-90deg);
+            .arrow__icon {
+                transform: rotate(-90deg);
                 width: 5rem;
-                // background-color: rgb(136, 136, 136);
-                // border: 10px solid white !important;
                 transition: .7s;
             }
 
@@ -138,17 +139,34 @@
             text-align: center;
             padding: 10px;
         }
-        .footer__reactIcon{
+
+        .footer__reactIcon {
             display: flex;
             margin-top: .3rem;
             margin-left: 50%;
-            & img{
+
+            & img {
                 width: 1.2rem;
             }
-            & p{
+
+            & p {
                 text-align: left;
                 margin: .7rem;
             }
         }
     }
+}
+
+.footer.white {
+    border-top: 1px solid $first-main-font-color--white;
+    background-color: $second-main-font-color--white;
+    color: $third-main-color--white;
+    transition: .7s;
+}
+
+.footer.black {
+    border-top: 1px solid $third-main-color--dark;
+    background-color: $third-main-color--dark;
+    color: $first-main-color--dark;
+    transition: .7s;
 }

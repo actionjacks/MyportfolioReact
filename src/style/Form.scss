@@ -1,7 +1,6 @@
 @include media-queries(xsmall) {
     .form {
-        background-color: rgb(38, 37, 37);
-        color: white;
+        padding-bottom: 10px;
 
         & .form__contactForm {
             margin-bottom: .5rem;
@@ -107,7 +106,7 @@
                 }
 
                 & .form__button>button {
-                    margin-top: .5rem;
+                    // margin-top: .5rem;
                     font-size: 15px;
                     color: black;
                     text-transform: uppercase;
@@ -142,15 +141,12 @@
 
 @include media-queries(large) {
     .form {
-        background-color: rgb(38, 37, 37);
-        color: white;
         font-size: 20px;
 
         & .form__contactForm {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            padding-bottom: 10vh;
 
             & .form__icon {
                 font-size: 55px;
@@ -273,4 +269,18 @@
             }
         }
     }
+}
+
+.form.white {
+    border-top: 1px solid $first-main-font-color--white;
+    background-color: $second-main-font-color--white;
+    color: $third-main-color--white;
+    transition: .7s;
+}
+
+.form.black {
+    border-top: 1px solid $third-main-color--dark;
+    background-color: $third-main-color--dark;
+    color: $first-main-color--dark;
+    transition: .7s;
 }

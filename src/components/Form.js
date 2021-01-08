@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import MailOutlineIcon from "@material-ui/icons/MailOutline";
 
-function Form({ data }) {
+function Form({ data, theme }) {
   const [name, setName] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
@@ -12,7 +12,7 @@ function Form({ data }) {
     window.open(`mailto:${myMail}?subject=${subject}&body=${name}: ${message}`);
   };
   return (
-    <div className="form">
+    <div className={`form ${theme}`}>
       {data?.form ? (
         <>
           <form className="form__contactForm">
@@ -51,6 +51,7 @@ function Form({ data }) {
                 ></textarea>
               </div>
               <div className="form__button">
+                <br />
                 <button
                   type="submit"
                   onClick={handleSendForm}

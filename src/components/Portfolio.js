@@ -4,7 +4,6 @@ import PortfolioItem from "./PortfolioItem";
 function Portfolio({ data, theme }) {
   return (
     <div className={`portfolio ${theme}`}>
-      
       {data?.portfolio ? (
         <>
           <h3 className="portfolio__title">{data.portfolio}</h3>
@@ -16,6 +15,7 @@ function Portfolio({ data, theme }) {
                 link={item.link}
                 isDeployed={item.isDeployed}
                 sourceCode={item.sourceCode}
+                theme={theme}
               />
             ))}
           </div>
