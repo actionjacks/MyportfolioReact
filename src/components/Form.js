@@ -16,7 +16,7 @@ function Form({ data, theme }) {
       {data?.form ? (
         <>
           <form className="form__contactForm">
-            <MailOutlineIcon className="form__icon" />
+            <MailOutlineIcon className={`form__icon ${theme}`} />
             <div className="form__fieldset">
               <h3>{data.form.formTitle}</h3>
               <div className="form__inputName">

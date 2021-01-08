@@ -6,7 +6,6 @@
         flex-direction: column;
         justify-content: space-between;
         margin: 2vh;
-        color: black;
 
         & .isDeployed {
             opacity: .5;
@@ -34,7 +33,6 @@
         }
 
         & a {
-            color: white;
             text-decoration: none;
             text-align: center;
             transition: .7s;
@@ -59,7 +57,6 @@
             margin-right: 8vw;
             margin-bottom: 5vh;
             width: 33%;
-            color: black;
 
             & img {
                 border-radius: 22px;
@@ -75,7 +72,6 @@
             }
 
             & a {
-                color: white;
                 text-decoration: none;
                 text-align: center;
                 transition: .7s;
@@ -90,9 +86,19 @@
 }
 
 .PortfolioItem.white {
-    background-color: $third-main-color--white;
+    background-color: $second-font-color--white;
+    color: $first-background-color--white;
+}
+
+.source.white {
+    color: $first-font-color--white;
 }
 
 .PortfolioItem.black {
-    background-color: $first-main-color--dark;
+    background-color: $second-font-color--black;
+    color: $first-background-color--black;
+}
+
+.source.black {
+    color: $first-font-color--black;
 }

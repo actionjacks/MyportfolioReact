@@ -14,7 +14,7 @@ function WellcomePage({ data, theme }) {
             </RubberBand>
             <div className="icons">
               <a href="https://github.com/actionjacks">
-                <GitHubIcon className="icon__github" />
+                <GitHubIcon className={`icon__github ${theme}`} />
               </a>
             </div>
           </div>

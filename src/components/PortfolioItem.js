@@ -10,7 +10,9 @@ function PortfolioItem({ image, link, sourceCode, isDeployed, theme }) {
         {isDeployed === "false" ? (
           <span className="isDeployed">no deployed</span>
         ) : null}
-        <a href={sourceCode}>source code</a>
+        <a className={`source ${theme}`} href={sourceCode}>
+          source code
+        </a>
       </div>
     </>
   );

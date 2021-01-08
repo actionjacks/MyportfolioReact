@@ -47,15 +47,17 @@
 }
 
 .portfolio.white {
-    border-top: 1px solid $first-main-font-color--white;
-    background-color: $second-main-font-color--white;
-    color: $third-main-color--white;
+    border-top: 1px solid $first-font-color--white;
+    box-shadow: inset 0 0 3px $first-font-color--white;
+    background-color: $first-background-color--white;
+    color: $first-font-color--white;
     transition: .7s;
 }
 
 .portfolio.black {
     border-top: 1px solid $third-main-color--dark;
-    background-color: $third-main-color--dark;
-    color: $first-main-color--dark;
+    box-shadow: inset 0 0 3px $third-main-color--white;
+    background-color: $first-background-color--black;
+    color: $first-font-color--black;
     transition: .7s;
 }
