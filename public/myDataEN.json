@@ -70,6 +70,30 @@
       "sourceCode": "https://github.com/actionjacks/MOVIE_API_DB"
     },
     {
+      "image": "./images/portfolio/my-tiktok.jpg",
+      "isDeployed": "true",
+      "link": "https://mytik-tok-2181f.web.app/",
+      "sourceCode": "https://github.com/actionjacks/myTiktok/tree/main"
+    },
+    {
+      "image": "./images/portfolio/my-facebook.jpg",
+      "isDeployed": "true",
+      "link": "https://my-facebook-22867.web.app/",
+      "sourceCode": "https://github.com/actionjacks/MyFacebook-mongoDB-pusher"
+    },
+    {
+      "image": "./images/portfolio/my-slack.jpg",
+      "isDeployed": "false",
+      "link": "#page-2",
+      "sourceCode": "https://github.com/actionjacks/my-slack-comunicator-MERN"
+    },
+    {
+      "image": "./images/portfolio/my-netflix.jpg",
+      "isDeployed": "false",
+      "link": "#page-2",
+      "sourceCode": "#page-2"
+    },
+    {
       "image": "./images/portfolio/my-hearthstone.jpg",
       "isDeployed": "true",
       "link": "https://heartstone-api.web.app/",
@@ -80,6 +104,18 @@
       "isDeployed": "false",
       "link": "#page-2",
       "sourceCode": "https://github.com/actionjacks/wazzup-mongoDB"
+    },
+    {
+      "image": "./images/portfolio/my-Messenger.jpg",
+      "isDeployed": "true",
+      "link": "https://jackmessenger-e9aff.web.app/",
+      "sourceCode": "https://github.com/actionjacks/messenger_clone"
+    },
+    {
+      "image": "./images/portfolio/my-Google.jpg",
+      "isDeployed": "true",
+      "link": "https://clone-3ad8b.web.app/",
+      "sourceCode": "#page-2"
     }
   ],
   "form": {
