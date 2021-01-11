@@ -1,1 +1,2 @@
 ###
+refaktor style w komponentach
