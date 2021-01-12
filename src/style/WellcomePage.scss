@@ -104,6 +104,7 @@
   }
 }
 
+//themes colors
 .wellcomePage__banerText.white {
   text-shadow: 2px 2px 0 $first-background-color--white,
     2px -2px 0 $first-background-color--white,
@@ -132,7 +133,14 @@ h3.white {
 }
 
 .wellcomePage__banerText.black {
-  text-shadow: 2px 2px 0 $first-icon-colorHover--black, 2px -2px 0 $first-icon-colorHover--black, -2px 2px 0 $first-icon-colorHover--black, -2px -2px 0 $first-icon-colorHover--black, 2px 0px 0 $first-icon-colorHover--black, 0px 2px 0 $first-icon-colorHover--black, -2px 0px 0 $first-icon-colorHover--black, 0px -2px 0 $first-icon-colorHover--black;
+  text-shadow: 2px 2px 0 $first-icon-colorHover--black,
+    2px -2px 0 $first-icon-colorHover--black,
+    -2px 2px 0 $first-icon-colorHover--black,
+    -2px -2px 0 $first-icon-colorHover--black,
+    2px 0px 0 $first-icon-colorHover--black,
+    0px 2px 0 $first-icon-colorHover--black,
+    -2px 0px 0 $first-icon-colorHover--black,
+    0px -2px 0 $first-icon-colorHover--black;
 }
 
 h1.black {

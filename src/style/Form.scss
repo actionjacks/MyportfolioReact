@@ -261,6 +261,7 @@
     }
 }
 
+//themes colors
 .form__icon.white {
     color: $first-icon-color--white;
 }
@@ -286,8 +287,8 @@
 }
 
 .form.black {
-    border-top: 1px solid $third-main-color--dark;
-    box-shadow: inset 0 0 3px $third-main-color--white;
+    border-top: 1px solid $first-icon-colorHover--black;
+    box-shadow: inset 0 0 3px $first-icon-colorHover--black;
     background-color: $first-background-color--black;
     color: $first-font-color--black;
     transition: .7s;
