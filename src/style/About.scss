@@ -4,7 +4,7 @@
         padding: 10vh;
 
         & .about__profilePic {
-            object-fit: cover;
+            object-fit: contain;
             height: 15vh;
             width: 15vh;
             border-radius: 50%;
@@ -40,7 +40,7 @@
         font-size: 20px;
 
         & .about__profilePic {
-            object-fit: cover;
+            object-fit: contain;
             height: 30vh;
             width: 30vh;
             border-radius: 50%;

@@ -1,15 +1,12 @@
 import React from "react";
+import AvatarFace from "./AvatarFace";
 
 function About({ data, theme }) {
   return (
     <div className={`about ${theme}`}>
       {data?.about ? (
         <>
-          <img
-            className="about__profilePic"
-            src="../images/avatar.jpg"
-            alt="jacek profile pic"
-          />
+          <AvatarFace />
           <div className="about__details">
             <aside className="about__me">
               <h2>{data.about.aboutMe}</h2>
