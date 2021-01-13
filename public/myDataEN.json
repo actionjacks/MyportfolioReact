@@ -89,9 +89,9 @@
     },
     {
       "image": "./images/portfolio/my-netflix.jpg",
-      "isDeployed": "false",
-      "link": "#page-2",
-      "sourceCode": "#page-2"
+      "isDeployed": "true",
+      "link": "https://my-netflixx.herokuapp.com/",
+      "sourceCode": "https://github.com/actionjacks/Netflix-fake"
     },
     {
       "image": "./images/portfolio/my-hearthstone.jpg",
