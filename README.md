@@ -1,2 +1,2 @@
-###
-refaktor style w komponentach
+###todo
+#adding component styles
