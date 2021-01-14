@@ -83,8 +83,8 @@
     },
     {
       "image": "./images/portfolio/my-slack.jpg",
-      "isDeployed": "false",
-      "link": "#page-2",
+      "isDeployed": "true",
+      "link": "https://my-slack-8ee92.web.app/",
       "sourceCode": "https://github.com/actionjacks/my-slack-comunicator-MERN"
     },
     {
