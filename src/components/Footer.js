@@ -38,8 +38,11 @@ function Footer({ theme }) {
         </li>
         <li className="footer__reactIcon">
           <p>Powered by</p>
-          <a href="https://pl.reactjs.org/docs/getting-started.html">
-            <img src="./images/react_icon.svg" alt="" />
+          <a
+            className="icon__react"
+            href="https://pl.reactjs.org/docs/getting-started.html"
+          >
+            <img src="./images/logo.png" width={15} height={15} alt="" />
           </a>
         </li>
       </ul>
