@@ -50,13 +50,14 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap !important;
+        width: 100%;
+        margin: 0;
 
         .PortfolioItem {
             border-radius: 22px;
-            margin-left: 8vw;
-            margin-right: 8vw;
-            margin-bottom: 5vh;
-            width: 33%;
+            margin-left: 2vw;
+            margin-right: 2vw;
+            width: 25%;
 
             & img {
                 border-radius: 22px;

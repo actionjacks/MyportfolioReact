@@ -403,8 +403,8 @@ h3.black {
     padding: 10vh;
   }
   .about .about__profilePic {
-    -o-object-fit: cover;
-       object-fit: cover;
+    -o-object-fit: contain;
+       object-fit: contain;
     height: 15vh;
     width: 15vh;
     border-radius: 50%;
@@ -442,8 +442,8 @@ h3.black {
     font-size: 20px;
   }
   .about .about__profilePic {
-    -o-object-fit: cover;
-       object-fit: cover;
+    -o-object-fit: contain;
+       object-fit: contain;
     height: 30vh;
     width: 30vh;
     border-radius: 50%;
@@ -1072,6 +1072,9 @@ h3.black {
     text-align: left;
     margin: .7rem;
   }
+  .footer .footer__reactIcon .icon__react img {
+    margin: 10px 0;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -1137,6 +1140,9 @@ h3.black {
   .footer .footer__reactIcon p {
     text-align: left;
     margin: .7rem;
+  }
+  .footer .footer__reactIcon .icon__react img {
+    margin: 10px 0;
   }
 }
 

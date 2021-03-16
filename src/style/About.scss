@@ -1,7 +1,7 @@
 @include media-queries(xsmall) {
     .about {
         display: flex;
-        padding: 10vh;
+        padding: 10px;
 
         & .about__profilePic {
             object-fit: contain;

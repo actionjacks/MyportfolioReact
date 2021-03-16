@@ -12,7 +12,7 @@
     "contact": "kontakt",
     "contactDetails": {
       "name": "Jacek Zablocki",
-      "street": "przejazdowa 3",
+      "street": "przejazdowa",
       "zipcode": "16-010",
       "town": "Wasilkow",
       "phone": "795616929",
@@ -122,6 +122,18 @@
       "isDeployed": "true",
       "link": "https://robinhood-app.herokuapp.com/",
       "sourceCode": "https://github.com/actionjacks/RoobinHood-dummydata"
+    },
+    {
+      "image": "./images/portfolio/my-json-shoop.jpg",
+      "isDeployed": "true",
+      "link": "https://json-shoop.herokuapp.com/",
+      "sourceCode": "https://github.com/actionjacks/json-eshoop"
+    },
+    {
+      "image": "./images/portfolio/my-linkedin.jpg",
+      "isDeployed": "false",
+      "link": "#",
+      "sourceCode": "https://github.com/actionjacks/fake-LinkedIn"
     }
   ],
   "form": {
